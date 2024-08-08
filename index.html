@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>T-Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="images/icon.png" sizes="24x24" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="shadow">
+        <a href="#" class="logo">
+            <i class='bx bxs-movie-play'></i> TMOVIES
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="nav-bar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#coming">Up Coming</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+        <a href="#" class="btn" onclick="openSignIn()">Sign In</a>
+    </header>
+    <section class="home swiper" id="home">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide container">
+                <img class="img" src="images/bg10.jpg" alt="maharaja">
+                <div id="book"></div>
+                <div class="home-text">
+                    <h1>Joe</h1>
+                    <h3>Genre : <span>Love, Drama</span></h3>
+                    <a href="#" onclick="openBooking('Joe')"  class="btn">Book Now</a>
+                    <a href="#" class="play"><i class='bx bx-play'></i></a>
+                </div>
+              </div>
+              <div class="swiper-slide container">
+                <img src='images/bgg3.jpg' alt="96">
+                <div class="home-text">
+                    <h1>96</h1>
+                    <h3>Genre : <span>Drama, Romance</span></h3>
+                    <a href="#" onclick="openBooking('96')"  class="btn">Book Now</a>
+                    <div id="book"></div>
+                    <a href="#" class="play"><i class='bx bx-play'></i></a>
+                </div>
+              </div>
+              <div class="swiper-slide container">
+                <img src="images/bg4.jpg" alt="maharaja">
+                <div class="home-text">
+                    <h1>Raja Rani</h1>
+                    <h3>Genre : <span>Drama, Love</span></h3>
+                    <a href="#" onclick="openBooking('Raja Rani')" class="btn">Book Now</a>
+                    <a href="#" class="play"><i class='bx bx-play'></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+    </section>
+    <section class="movies" id="movies">
+      <h2 class="heading">Opening This Week</h2>
+      <div class="movies-containerr">
+        <div class="box">
+          <div class="box-img">
+            <img src="images/indian2.webp" alt="">
+          </div>
+          <h3>indian2</h3>
+          <span>1hr 30min | Action</span>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="images/Lal-Salaam-Poster.avif" alt="">
+          </div>
+          <h3>Lal Salaam</h3>
+          <span>1hr 30min | Action</span>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="images/maharaja.avif" alt="">
+          </div>
+          <h3>Maharaja</h3>
+          <span>1hr 30min | thriller</span>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="images/ptsir.avif" alt="">
+          </div>
+          <h3>PT sir</h3>
+          <span>1hr 30min | Action</span>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="images/rasavathi.avif" alt="">
+          </div>
+          <h3>Rasavathi</h3>
+          <span>1hr 30min | Drama, Romance</span>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="images/teenz.webp" alt="">
+          </div>
+          <h3>Teenz</h3>
+          <span>1hr 30min | Drama</span>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="images/Ayalaan.avif" alt="">
+          </div>
+          <h3>Ayalaan</h3>
+          <span>1hr 30min | Drama, Action</span>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="images/aranmanai4.webp" alt="">
+          </div>
+          <h3>Aranmanai</h3>
+          <span>1hr 30min | Drama, thriller, Horror</span>
+        </div>
+      <div class="box">
+        <div class="box-img">
+          <img src="images/garudan.avif" alt="">
+        </div>
+        <h3>Garudan</h3>
+        <span>1hr 30min | Drama, Action</span>
+      </div>
+      <div class="box">
+        <div class="box-img">
+          <img src="images/rayan.jpg" alt="">
+        </div>
+        <h3>Rayan</h3>
+        <span>1hr 30min | Drama, Action</span>
+      </div>
+    </div>
+    </section>
+    <section class="coming" id="coming">
+      <h2 class="heading">Coming Soon</h2>
+      <div class="coming-container swiper">
+        <div class="swiper-wrapper">
+            <div class="box swiper-slide">
+              <div class="box-img">
+                <img src="images/cs1.avif" alt="">
+              </div>
+            <h3>The Greatest of All Time</h3>
+            <span>Action, Sci-Fi</span>
+          </div>
+          <div class="box swiper-slide">
+            <div class="box-img">
+              <img src="images/cs2.avif" alt="">
+            </div>
+            <h3>Meiyazhagan</h3>
+            <span>Drama</span>
+          </div>
+          <div class="box swiper-slide">
+            <div class="box-img">
+              <img src="images/cs3.avif" alt="">
+            </div>
+            <h3>Raghu Thatha</h3>
+            <span>Comedy, Drama</span>
+          </div>
+          <div class="box swiper-slide">
+            <div class="box-img">
+              <img src="images/cs4.avif" alt="">
+            </div>
+            <h3>Thangalaan</h3>
+            <span>Action, Adventure, History</span>
+          </div>
+          <div class="box swiper-slide">
+            <div class="box-img">
+              <img src="images/cs5.avif" alt="">
+            </div>
+            <h3>Kanguva</h3>
+            <span>Action, Drama, Fantasy</span>
+          </div>
+          <div class="box swiper-slide">
+            <div class="box-img">
+              <img src="images/cs6.avif" alt="">
+            </div>
+            <h3>Amaran</h3>
+            <span>Action, Biography, Drama, War</span>
+          </div>
+          <div class="box swiper-slide">
+            <div class="box-img">
+              <img src="images/cs7.avif" alt="">
+            </div>
+            <h3>VidaaMuyarchi</h3>
+            <span>Action, Thriller</span>
+          </div>
+          <div class="box swiper-slide">
+            <div class="box-img">
+              <img src="images/cs8.avif" alt="">
+            </div>
+            <h3>Thani Oruvan 2</h3>
+            <span>Action, Drama</span>
+          </div>
+          <div class="box swiper-slide">
+            <div class="box-img">
+              <img src="images/cs9.avif" alt="">
+            </div>
+            <h3>Vaadivaasal</h3>
+            <span>Action</span>
+          </div>
+          <div class="box swiper-slide">
+            <div class="box-img">
+              <img src="images/cs10.avif" alt="">
+            </div>
+            <h3>Kannappa</h3>
+            <span>Drama, Fantasy, History</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter" id="newsletter">
+      <h2>Subscribe to get<br>Newsletter</h2>
+      <form action="">
+        <input type="email" class="email" placeholder="Enter Email....">
+        <input type="submit" value="Subscribe" class="btn">
+      </form>
+    </section>
+    <section class="footer">
+      <a href="#" class="logo">
+        <i class='bx bxs-movie-play'></i> TMOVIES
+    </a>
+    <div class="social">
+      <a href="#"><i class='bx bxl-facebook'></i></a>
+      <a href="https://twitter.com/i/flow/signup"><i class='bx bxl-twitter'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+      <a href="#"><i class='bx bxl-youtube'></i></a>
+    </div>
+    </section>
+    <div id="booking-sidebar" class="booking-sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeBooking()">&times;</a>
+      <h2 id="movie-title"></h2>
+      <form id="booking-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+          <input type="submit" value="Book Now" class="btn">
+      </form>
+  </div>
+  <div id="overlay" class="overlay" onclick="closeBooking()"></div>
+    
+    <div class="signin-form-overlay" id="signin-form-overlay">
+      <div class="signin-form-content">
+          <span class="closebtn" onclick="closeSignIn()">&times;</span>
+          <h2>Sign In</h2>
+          <form id="signin-form">
+              <label for="signin-email">Email:</label>
+              <input type="email" id="signin-email" name="email" required>
+              <label for="signin-password">Password:</label>
+              <input type="password" id="signin-password" name="password" required>
+              <input type="submit" value="Sign In" class="btn">
+          </form>
+      </div>
+  </div>
+    <div class="copyrigth">
+      <p>&#169; TMOVIES All Right Reserved.</p>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script  src="index.js" ></script>
+ 
+</body>
+</html>
